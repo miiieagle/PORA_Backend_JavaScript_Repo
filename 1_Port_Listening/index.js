@@ -12,7 +12,7 @@ app.listen(port, () => {
 app.get("/student", (req, res, next) => {
 const studentDetails ={
    name: "Jude Adeyemi",
-   age: 30,
+   age: 20,
    class: 2023,
 }
 res.send(studentDetails)
