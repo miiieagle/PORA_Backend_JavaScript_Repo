@@ -3,10 +3,10 @@ const express = require("express")
 const router = express.Router()
 
 router.post("/register", (req, res, next) => {
-    res.send("account created")
+    res.status(201).json({"account created"})
 });
 
-router.get("/login", (req, res, next) => {
+router.post("/login", (req, res, next) => {
     res.send("Welcome...")
 });
 

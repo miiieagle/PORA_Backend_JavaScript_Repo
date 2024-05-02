@@ -4,5 +4,7 @@ const productRoute = require("../routes/product")
 
 module.exports = (app) =>{
     app.use("/users", usersRoute)
-    app.use("/product", productRoute)
+    app.use("/products", productRoute)
 }
+
+module.exports = router
