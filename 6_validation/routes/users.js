@@ -35,13 +35,5 @@ router.get("/", async(req, res, next) => {
     })
 })
 
-//getting one parameter from data base
-router.get("/email", async(req, res, next) => {
-    const {email} = req.body
-    const userExist = await userModel.findOne({email:email})
-    res.status(200).json({
-        data:userExist
-    })
-})
 
 module.exports = router;
